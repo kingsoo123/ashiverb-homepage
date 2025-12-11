@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <title>Security web</title>
     <style>
+        .mySlides {
+            display: none;
+        }
+
         @keyframes slideInRight {
             0% {
                 transform: translateX(100%);
@@ -166,20 +170,123 @@
     </div>
 
     <div class="flex w-full mt-[40px] justify-center items-center">
-        <div class="w-[80%] p-8">
-            <h1 class="w-full md:w-1/2 mx-auto md:text-4xl text-2xl font-semibold text-[#0B1C3F] text-center">OUR
+        <div class="md:w-[70%] w-full p-8">
+            <h1 class="w-full md:w-3/4 mx-auto md:text-4xl text-xl font-semibold text-[#0B1C3F] text-center">OUR
                 BEST SERVICES</h1>
-            <div class="flex w-full flex-col md:flex-row mt-[30px]">
+            <div class="flex w-full flex-col md:flex-row mt-[60px] md:space-y-1 space-y-6">
                 <div class="flex justify-center items-center  md:w-1/2">
-                    <div class="w-[80%]">
-                        <img src="assets/pic1.jpg" alt="image1" class="rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200"
->
+                    <div class="md:w-[80%] w-full">
+                        <img src="assets/pic1.jpg" alt="image1"
+                            class="rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200">
                     </div>
                 </div>
-                <div class="w-full md:w-1/2 bg-red-400 h-[300px]"></div>
+                <div
+                    class="w-full md:w-1/2 p-8 rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200">
+                    <h4 class="font-bold text-xl text-blue-400 bg-[#0B1C3F] rounded-lg p-2 w-[300px]">24/7 CONSTANT
+                        SUPPORT</h4>
+                    <p class="w-[300px] text-xl p-2">Expert assistance always available, providing relentless support
+                        and timely solutions, ensuring
+                        uninterrupted peace of mind and seamless operations around the clock.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flex w-full mt-[30px] justify-center items-center">
+        <div class="md:w-[70%] w-full p-8">
+            <div class="flex w-full flex-col md:flex-row md:space-y-1 space-y-6">
+                <div
+                    class="w-full md:w-1/2 p-8 rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200">
+                    <h4 class="font-bold text-xl text-blue-400 bg-[#0B1C3F] rounded-lg p-2 w-[300px]">BEST PROFESSIONAL
+                    </h4>
+                    <p class="w-[300px] text-xl p-2">Unmatched expertise, exceptional skill, and unwavering dedication
+                        define our professionals, delivering top-tier services with precision, passion, and a commitment
+                        to excellence.</p>
+                </div>
+                <div class="flex justify-center items-center  md:w-1/2">
+                    <div class="md:w-[80%] w-full">
+                        <img src="assets/pic2.jpg" alt="image1"
+                            class="rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="flex w-full mt-[30px] justify-center items-center">
+        <div class="md:w-[70%] w-full p-8">
+            <div class="flex w-full flex-col md:flex-row md:space-y-1 space-y-6">
+                <div class="flex justify-center items-center  md:w-1/2">
+                    <div class="md:w-[80%] w-full">
+                        <img src="assets/pic3.jpg" alt="image1"
+                            class="rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200">
+                    </div>
+                </div>
+                <div
+                    class="w-full md:w-1/2 p-8 rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200">
+                    <h4 class="font-bold text-xl text-blue-400 bg-[#0B1C3F] rounded-lg p-2 w-[300px]">ALWAYS HONEST</h4>
+                    <p class="w-[300px] text-xl p-2">Transparency and integrity guide our actions, fostering trust
+                        through open communication, ethical practices, and reliable accountability, ensuring
+                        long-lasting relationships built on truth and mutual respect.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex w-full mt-[30px] justify-center items-center">
+        <div class="bg-[#0B1C3F] text-white flex flex-col md:flex-row w-[95%] md:w-[80%] h-auto justify-between items-center rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200 p-4">
+            <div class="p-8">
+                <div class="space-y-0">
+                    <p class="text-[50px]">From our</p>
+                    <p class="text-[60px] font-semibold leading-tight">clients.</p>
+                </div>
+                <p class="text-xl">Here's what our clients had to say about us.</p>
+
+                <div class="flex items-center justify-start space-x-4 py-6">
+                    <img src="assets/back.png" alt="" class="w-[30px] h-[30px]">
+                    <img src="assets/next.png" alt="" class="w-[30px] h-[30px]">
+                </div>
+            </div>
+            <div class="w-[80%] md:p-8 p-2 space-y-6 mySlides">
+                <img src="assets/quote.png" alt="" class="w-[60px] h-[60px]">
+                <p>We recently experienced a potential security breach at our corporate office. The swift response and
+                    professionalism of the security team, led by Officer Johnson, were impressive. They quickly
+                    identified the threat and escorted the individual off the premises. Their vigilance and expertise
+                    ensured our employees' safety and protected sensitive company information. We're grateful for their
+                    exceptional service
+                </p>
+                <p>MIRACLE OVIE CHRISTIANA</p>
+                <p>Head, Alcent Pharmaceuticals, Ikeja, Lagos.</p>
             </div>
 
 
+            <div class="w-[80%] md:p-8 p-2 space-y-6 mySlides">
+                <img src="assets/quote.png" alt="" class="w-[60px] h-[60px]">
+                <p>During a busy holiday season, our store experienced a surge in shoplifting attempts. The security
+                    team, under Officer Rodriguez's supervision, implemented effective measures to deter incidents.
+                    Their visible presence and proactive engagement with customers significantly reduced theft. We
+                    appreciate their dedication to securing our assets and providing a safe shopping environment.
+                </p>
+                <p>ADELEKE OLORUNFEMI</p>
+                <p>Fashion Central Stores, Abuja</p>
+            </div>
+
+
+            <div class="w-[80%] md:p-8 p-2 space-y-6 mySlides">
+                <img src="assets/quote.png" alt="" class="w-[60px] h-[60px]">
+                <p>At our annual music festival, the security team, led by Officer Thompson, demonstrated exceptional
+                    crowd management skills. They ensured seamless entry and exit processes, responded promptly to
+                    medical emergencies, and maintained order throughout the event. Their professionalism and
+                    friendliness received numerous compliments from attendees. We look forward to working with them
+                    again.
+                </p>
+                <p>RACHEL ABASI</p>
+                <p>Event Coordinator, Summer Fest, Ikeja</p>
+            </div>
         </div>
     </div>
 
@@ -194,6 +301,22 @@
     btn.addEventListener("click", () => {
         menu.classList.toggle("hidden");
     });
+
+
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) { slideIndex = 1 }
+        x[slideIndex - 1].style.display = "block";
+        setTimeout(carousel, 4000);
+    }
 </script>
 
 </html>
