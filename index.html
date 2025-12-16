@@ -5,73 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <title>Security web</title>
-    <style>
-        .mySlides {
-            display: none;
-        }
 
-        @keyframes slideInRight {
-            0% {
-                transform: translateX(100%);
-                opacity: 0;
-            }
-
-            100% {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-
-        .animate-slide-in-right {
-            animation: slideInRight 1s ease-out forwards;
-        }
-
-
-
-        /* Optional: delay for paragraph */
-        .animate-slide-in-right-delay {
-            animation: slideInRight 1s ease-out forwards;
-            animation-delay: 0.5s;
-            /* half-second delay */
-        }
-    </style>
+    <title>Document</title>
 </head>
 
-<body class="bg-gray-100">
-    <div class="relative w-full h-[500px] h-64 bg-cover bg-center" style="background-image: url('assets/police.jpg');">
-        <div class="absolute inset-0 bg-transparent bg-opacity-0 inset-0 bg-gradient-to-b from-black/70 to-black/40">
+<body>
+    <div class="police-background">
+        <div class="containerOverlay">
         </div>
 
-        <div class="relative z-10 text-white p-5">
+
+        <div class="Navcontent">
             <!-- Nav bar -->
 
-            <nav class="bg-transparent shadow-md fixed w-full top-0 left-0 z-50">
-                <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+            <nav class="Navheader">
+                <div class="nav-container">
                     <!-- Logo -->
-                    <h1 class="text-2xl font-bold">MyLogo</h1>
+                    <h1 class="logoTitle">MyLogo</h1>
 
                     <!-- Desktop Menu -->
-                    <ul class="hidden md:flex gap-8 text-lg">
-                        <li><a href="#" class="hover:text-blue-500">Home</a></li>
-                        <li><a href="#" class="hover:text-blue-500">Services</a></li>
-                        <li><a href="#" class="hover:text-blue-500">About</a></li>
-                        <li><a href="#" class="hover:text-blue-500">Contact</a></li>
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
 
                     <!-- Mobile Hamburger Button -->
-                    <button id="menuBtn" class="md:hidden flex flex-col gap-1">
-                        <span class="w-6 h-1 bg-white"></span>
-                        <span class="w-6 h-1 bg-white"></span>
-                        <span class="w-6 h-1 bg-white"></span>
+                    <button id="menuBtn" class="menu-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
                     </button>
                 </div>
 
                 <!-- Mobile Menu -->
-                <div id="mobileMenu"
-                    class="hidden md:hidden bg-[#0B1C3F] px-6 pb-4 overflow-hidden transition-all duration-1000 ease-in-out">
-                    <ul class="flex flex-col gap-4 text-lg">
+                <div id="mobileMenu" class="mobile-menuCon">
+                    <ul class="containerMenu">
                         <li><a href="#" class="hover:text-blue-500">Home</a></li>
                         <li><a href="#" class="hover:text-blue-500">Services</a></li>
                         <li><a href="#" class="hover:text-blue-500">About</a></li>
@@ -79,14 +51,12 @@
                     </ul>
                 </div>
             </nav>
-            <h1
-                class="w-full md:w-1/2 mx-auto text-3xl md:text-5xl font-semibold text-white mt-24 text-center animate-slide-in-right">
-                We at <span class="underline text-blue-300">Ashiverb</span> provides top-notch security
+            <h1 class="hero-title slide-in-right">
+                We at <span class="ashiverb">Ashiverb</span> provides top-notch security
                 services.
             </h1>
 
-            <div
-                class="md:w-1/4 mx-auto text-xl font-semibold text-white mt-14 text-center animate-slide-in-right-delay bg-blue-400 py-6 rounded-md cursor-pointer">
+            <div class="button-card slide-in-right">
                 GET A FREE CONSULTATION
             </div>
             <!-- <p
@@ -96,164 +66,138 @@
     </div>
 
 
-    <div class="w-full mt-[-50px] relative z-80">
-        <h1 class="w-full md:w-1/2 mx-auto md:text-4xl text-2xl font-semibold text-white text-center">OUR
-            BEST SERVICES</h1>
-        <div class="flex justify-center items-center">
-            <div class="w-[80%] p-4 flex flex-wrap mx-auto mt-[40px]">
-                <div class="w-full sm:w-1/3 h-[250px] bg-transparent flex items-center justify-center py-2">
-                    <div
-                        class="sm:w-[80%] w-[100%] h-full bg-white rounded-lg shadow-lg flex flex-col items-center justify-center p-2 space-y-6 rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200">
 
-                        <i class="fa-solid fa-shield fa-2x text-gray-700"></i>
-                        <h4 class="font-bold text-xl text-blue-400">SECURITY CONSULTING</h4>
-                        <p class="text-center">The Love Boat promises something for every the beat of just one drum.</p>
-                    </div>
-                </div>
-
-                <div class="w-full sm:w-1/3 h-[250px] bg-transparent flex items-center justify-center py-2">
-                    <div
-                        class="sm:w-[80%] w-[100%] h-full bg-white rounded-lg shadow-lg flex flex-col items-center justify-center p-2 space-y-6 rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200">
-
-                        <i class="fa-solid fa-user-hoodie fa-2x"></i>
-                        <h4 class="font-bold text-xl text-blue-400">PATROL SERVICES</h4>
-                        <p class="text-center">Conducting regular patrols to deter potential threats, detect suspicious
-                            activity, and respond promptly .</p>
-                    </div>
-                </div>
-
-                <div class="w-full sm:w-1/3 h-[250px] bg-transparent flex items-center justify-center py-2">
-                    <div
-                        class="sm:w-[80%] w-[100%] h-full bg-white rounded-lg shadow-lg flex flex-col items-center justify-center p-2 space-y-6 rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200">
-
-                        <i class="fa-solid fa-shield fa-2x text-gray-700"></i>
-                        <h4 class="font-bold text-xl text-blue-400">SURVEILANCE MONITORING</h4>
-                        <p class="text-center">Observing CCTV cameras to identify and address security breaches.</p>
-                    </div>
-                </div>
-
-                <div class="w-full sm:w-1/3 h-[250px] bg-transparent flex items-center justify-center py-2">
-                    <div
-                        class="sm:w-[80%] w-[100%] h-full bg-white rounded-lg shadow-lg flex flex-col items-center justify-center p-2 space-y-6 rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200">
-
-                        <i class="fa-solid fa-shield fa-2x text-gray-700"></i>
-                        <h4 class="font-bold text-xl text-blue-400">EMERGENCY RESPONSE</h4>
-                        <p class="text-center">Responding quickly and effectively in emergency situations like fires,
-                            medical issues, or intrusions.</p>
-                    </div>
-                </div>
-
-                <div class="w-full sm:w-1/3 h-[250px] bg-transparent flex items-center justify-center py-2">
-                    <div
-                        class="sm:w-[80%] w-[100%] h-full bg-white rounded-lg shadow-lg flex flex-col items-center justify-center p-2 space-y-6 rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200">
-                        <i class="fa-solid fa-lock fa-2x"></i>
-                        <h4 class="font-bold text-xl text-blue-400">ACCESS CONTROL</h4>
-
-                        <p class="text-center">Monitoring and regulating entry and exit points to ensure only authorized
-                            individuals enter restricted areas</p>
-                    </div>
-                </div>
-
-                <div class="w-full sm:w-1/3 h-[250px] bg-transparent flex items-center justify-center py-2">
-                    <div
-                        class="sm:w-[80%] w-[100%] h-full bg-white rounded-lg shadow-lg flex flex-col items-center justify-center p-2 space-y-6 rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200">
-                        <i class="fa-sharp fa-solid fa-triangle-exclamation text-4xl"></i>
-                        <h4 class="font-bold text-xl text-blue-400">ASSET PROTECTION</h4>
-                        <p class="text-center">Safeguarding valuable assets, equipment, and properties from theft,
-                            damage, or vandalism.</p>
-                    </div>
-                </div>
-
+    <!-- start of middle content -->
+    <div class="brandSlide">
+        <div class="marquee">
+            <div class="track">
+                <span>Logo 1</span>
+                <span>Logo 2</span>
+                <span>Logo 3</span>
+                <span>Logo 4</span>
+                <span>Logo 1</span>
+                <span>Logo 2</span>
+                <span>Logo 3</span>
+                <span>Logo 4</span>
             </div>
         </div>
-
     </div>
 
-    <div class="flex w-full mt-[40px] justify-center items-center">
-        <div class="md:w-[70%] w-full p-8">
-            <h1 class="w-full md:w-3/4 mx-auto md:text-4xl text-xl font-semibold text-[#0B1C3F] text-center">OUR
-                BEST SERVICES</h1>
-            <div class="flex w-full flex-col md:flex-row mt-[60px] md:space-y-1 space-y-6">
-                <div class="flex justify-center items-center  md:w-1/2">
-                    <div class="md:w-[80%] w-full">
-                        <img src="assets/pic1.jpg" alt="image1"
-                            class="rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200">
-                    </div>
-                </div>
-                <div
-                    class="w-full md:w-1/2 p-8 rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200">
-                    <h4 class="font-bold text-xl text-blue-400 bg-[#0B1C3F] rounded-lg p-2 w-[300px]">24/7 CONSTANT
-                        SUPPORT</h4>
-                    <p class="w-[300px] text-xl p-2">Expert assistance always available, providing relentless support
-                        and timely solutions, ensuring
-                        uninterrupted peace of mind and seamless operations around the clock.</p>
-                </div>
+    <div class="title">
+        <h1>OUR BEST SERVICES
+        </h1>
+    </div>
+
+
+    <div class="secondCon">
+        <div class="cardWraps">
+            <div class="card hover:scale-105 transition-all duration-300">
+                <i class="fa-solid fa-shield fa-2x text-gray-700"></i>
+                <h4 style="font-weight: bold;">SECURITY CONSULTING</h4>
+                <p style="text-align: center; font-size: 18px;">The Love Boat promises something for every the beat of
+                    just one drum.</p>
+            </div>
+            <div class="card hover:scale-105 transition-all duration-300">
+                <i class="fa-solid fa-shield fa-2x text-gray-700"></i>
+                <h4 style="font-weight: bold;">PATROL SERVICES</h4>
+                <p style="text-align: center; font-size: 18px;">Conducting regular patrols to deter potential threats,
+                    detect suspicious activity, and respond promptly .</p>
+            </div>
+            <div class="card hover:scale-105 transition-all duration-300">
+                <i class="fa-solid fa-shield fa-2x text-gray-700"></i>
+                <h4 style="font-weight: bold;">SURVEILANCE MONITORING</h4>
+                <p style="text-align: center; font-size: 18px;">Observing CCTV cameras to identify and address security
+                    breaches.</p>
+            </div>
+            <div class="card hover:scale-105 transition-all duration-300">
+                <i class="fa-solid fa-shield fa-2x text-gray-700"></i>
+                <h4 style="font-weight: bold;">EMERGENCY RESPONSE</h4>
+                <p style="text-align: center; font-size: 18px;">Responding quickly and effectively in emergency
+                    situations like fires, medical issues, or intrusions.</p>
+            </div>
+            <div class="card hover:scale-105 transition-all duration-300">
+                <i class="fa-solid fa-shield fa-2x text-gray-700"></i>
+                <h4 style="font-weight: bold;">ACCESS CONTROL</h4>
+                <p style="text-align: center; font-size: 18px;">Monitoring and regulating entry and exit points to
+                    ensure only authorized individuals enter restricted areas</p>
+            </div>
+            <div class="card hover:scale-105 transition-all duration-300">
+                <i class="fa-solid fa-shield fa-2x text-gray-700"></i>
+                <h4 style="font-weight: bold;">ASSET PROTECTION</h4>
+                <p style="text-align: center; font-size: 18px;">Safeguarding valuable assets, equipment, and properties
+                    from theft, damage, or vandalism.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="title" style="padding-bottom: 70px;">
+        <h1>OUR ADVANTAGES</h1>
+    </div>
+
+
+
+    <div class="thirdCon">
+        <div class="first">
+            <div class="firstContainer hover:scale-105 transition-all duration-300">
+                <img src="assets/pic1.jpg" alt="image1" class="imgContainer">
+            </div>
+            <div class="secondContainer">
+                <h4>24/7 CONSTANT
+                    SUPPORT</h4>
+                <p>Expert assistance always available, providing relentless support
+                    and timely solutions, ensuring
+                    uninterrupted peace of mind and seamless operations around the clock.</p>
             </div>
         </div>
     </div>
 
 
-    <div class="flex w-full mt-[30px] justify-center items-center">
-        <div class="md:w-[70%] w-full p-8">
-            <div class="flex w-full flex-col md:flex-row md:space-y-1 space-y-6">
-                <div
-                    class="w-full md:w-1/2 p-8 rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200">
-                    <h4 class="font-bold text-xl text-blue-400 bg-[#0B1C3F] rounded-lg p-2 w-[300px]">BEST PROFESSIONAL
-                    </h4>
-                    <p class="w-[300px] text-xl p-2">Unmatched expertise, exceptional skill, and unwavering dedication
-                        define our professionals, delivering top-tier services with precision, passion, and a commitment
-                        to excellence.</p>
-                </div>
-                <div class="flex justify-center items-center  md:w-1/2">
-                    <div class="md:w-[80%] w-full">
-                        <img src="assets/pic2.jpg" alt="image1"
-                            class="rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200">
-                    </div>
-                </div>
+    <div class="thirdCon">
+        <div class="first">
+            <div class="secondContainer">
+                <h4>BEST PROFESSIONAL</h4>
+                <p>Unmatched expertise, exceptional skill, and unwavering dedication define our professionals, delivering top-tier services with precision, passion, and a commitment to excellence.</p>
+            </div>
+             <div class="firstContainer hover:scale-105 transition-all duration-300">
+                <img src="assets/pic2.jpg" alt="image1" class="imgContainer">
+            </div>
+        </div>
+    </div>
 
+    <div class="thirdCon">
+        <div class="first">
+            <div class="firstContainer hover:scale-105 transition-all duration-300">
+                <img src="assets/pic3.jpg" alt="image1" class="imgContainer">
+            </div>
+            <div class="secondContainer2">
+                <h4>ALWAYS HONEST</h4>
+                <p>Transparency and integrity guide our actions, fostering trust through open communication, ethical practices, and reliable accountability, ensuring long-lasting relationships built on truth and mutual respect.</p>
             </div>
         </div>
     </div>
 
 
 
-    <div class="flex w-full mt-[30px] justify-center items-center">
-        <div class="md:w-[70%] w-full p-8">
-            <div class="flex w-full flex-col md:flex-row md:space-y-1 space-y-6">
-                <div class="flex justify-center items-center  md:w-1/2">
-                    <div class="md:w-[80%] w-full">
-                        <img src="assets/pic3.jpg" alt="image1"
-                            class="rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200">
-                    </div>
-                </div>
-                <div
-                    class="w-full md:w-1/2 p-8 rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200">
-                    <h4 class="font-bold text-xl text-blue-400 bg-[#0B1C3F] rounded-lg p-2 w-[300px]">ALWAYS HONEST</h4>
-                    <p class="w-[300px] text-xl p-2">Transparency and integrity guide our actions, fostering trust
-                        through open communication, ethical practices, and reliable accountability, ensuring
-                        long-lasting relationships built on truth and mutual respect.</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="flex w-full mt-[30px] justify-center items-center">
-        <div
-            class="bg-[#0B1C3F] text-white flex flex-col md:flex-row w-[95%] md:w-[80%] h-auto justify-between items-center rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200 p-4">
-            <div class="p-8">
-                <div class="space-y-0">
-                    <p class="text-[50px]">From our</p>
-                    <p class="text-[60px] font-semibold leading-tight">clients.</p>
+
+    <div class="callUs">
+
+        <div class="insideCon">
+            <div style="padding: 20px;">
+                  <div>
+                    <p style="font-size: 50px;">From our</p>
+                    <p class="clientText">clients.</p>
                 </div>
-                <p class="text-xl">Here's what our clients had to say about us.</p>
+                  <p class="text-xl">Here's what our clients had to say about us.</p>
 
                 <div class="flex items-center justify-start space-x-4 py-6">
                     <img src="assets/back.png" alt="" class="w-[30px] h-[30px]">
                     <img src="assets/next.png" alt="" class="w-[30px] h-[30px]">
                 </div>
             </div>
-            <div class="w-[80%] md:p-8 p-2 space-y-6 mySlides">
-                <img src="assets/quote.png" alt="" class="w-[60px] h-[60px]">
+
+             <div class="mySlides slidebox md:p-8 p-2 space-y-6">
+                <img src="assets/quote.png" alt=""  style="width: 60px; height: 60px;">
                 <p>We recently experienced a potential security breach at our corporate office. The swift response and
                     professionalism of the security team, led by Officer Johnson, were impressive. They quickly
                     identified the threat and escorted the individual off the premises. Their vigilance and expertise
@@ -270,8 +214,8 @@
             </div>
 
 
-            <div class="w-[80%] md:p-8 p-2 space-y-6 mySlides">
-                <img src="assets/quote.png" alt="" class="w-[60px] h-[60px]">
+             <div class="mySlides slidebox md:p-8 p-2 space-y-6">
+                <img src="assets/quote.png" alt=""  style="width: 60px; height: 60px;">
                 <p>During a busy holiday season, our store experienced a surge in shoplifting attempts. The security
                     team, under Officer Rodriguez's supervision, implemented effective measures to deter incidents.
                     Their visible presence and proactive engagement with customers significantly reduced theft. We
@@ -287,8 +231,8 @@
             </div>
 
 
-            <div class="w-[80%] md:p-8 p-2 space-y-6 mySlides">
-                <img src="assets/quote.png" alt="" class="w-[60px] h-[60px]">
+             <div class="mySlides slidebox md:p-8 p-2 space-y-6">
+                <img src="assets/quote.png" alt=""  style="width: 60px; height: 60px;">
                 <p>At our annual music festival, the security team, led by Officer Thompson, demonstrated exceptional
                     crowd management skills. They ensured seamless entry and exit processes, responded promptly to
                     medical emergencies, and maintained order throughout the event. Their professionalism and
@@ -303,37 +247,32 @@
                 <i class="fa-regular fa-star text-yellow-400"></i>
                 <i class="fa-regular fa-star text-yellow-400"></i>
             </div>
+          
         </div>
     </div>
 
-
-
-    <div class="flex w-full mt-[50px] justify-center items-center">
-        <div
-            class="flex flex-col md:flex-row w-[95%] md:w-[80%] h-auto justify-between items-center rounded-2xl shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200 p-4">
-
-            <div class="flex flex-col md:w-[50%] w-full h-[300px] p-6 justify-center items-center">
-                <p class="text-[30px] font-semibold">GET FREE CONSULTATION (OR) CALL US: <span
-                        class="font-semibold underline">+234-803-501-1297</span> </p>
+    <div class="reachUs">
+        <div class="insideReach">
+             <div class="reach2">
+                <p style="font-size: 30px; font-weight: bold;">GET FREE CONSULTATION (OR) CALL US: <span style="font-weight: bold; text-decoration: underline;">+234-803-501-1297</span> </p>
             </div>
-            <div class="md:w-[50%] w-full h-[300px] flex justify-center items-center">
+            <div class="footerlast" >
                 <img src="assets/call2.jpg" alt="/" class="w-full h-full object-cover rounded-2xl" />
             </div>
         </div>
-
     </div>
 
 
-    <div class="flex w-full mt-[50px] justify-center items-center bg-[#0B1C3F]">
+    <div class="footer">
         <div class="flex flex-col md:flex-row w-[95%] md:w-[90%] h-auto justify-between items-center">
             <div
-                class="flex flex-col md:w-[30%] w-full h-[300px] p-6 justify-center items-center h-[300px] text-white space-y-1">
-                <p class="font-semibold">ACTIVE OFFICERS</p>
-                <img src="assets/active.jpg" alt="activeofficer" class="rounded-2xl" />
+                class="footerInside">
+                <p style="font-weight:bold;">ACTIVE OFFICERS</p>
+                <img src="assets/active.jpg" alt="activeofficer" style="border-radius: 16px;" class="hover:scale-105 transition-all duration-300"/>
                 <p>With razor-sharp reflexes and quick thinking, our security officers expertly diffuse potential
                     threats, providing unparalleled protection and assurance..</p>
             </div>
-            <div class="flex flex-col md:w-[30%] w-full h-[300px] p-6 justify-center items-center h-[300px] text-white space-y-4">
+            <div class="footernav">
                 <div>
                     <p class="font-semibold text-left">QUICK LINKS</p>
                     <p><i class="fas fa-angle-double-right text-white"></i> About Us</p>
@@ -358,6 +297,10 @@
             </div>
         </div>
     </div>
+
+
+    
+
 </body>
 
 <script>
