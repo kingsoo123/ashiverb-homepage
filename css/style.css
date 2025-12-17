@@ -831,6 +831,10 @@ padding-bottom: 30px;
 
 }
 
+.spc{
+    padding: 2rem;
+  }
+
 /* md breakpoint (≥ 768px) */
 @media (min-width: 768px) {
   .abtTxt
@@ -838,6 +842,10 @@ padding-bottom: 30px;
     width: 50%;
       animation: slide-in-right 1s ease-out forwards;
 
+  }
+
+  .spc{
+    padding: 0.5rem;
   }
 }
 
@@ -882,3 +890,18 @@ padding-bottom: 30px;
   height: 500px;
   background-color: red;
 }
+
+.spc2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px; /* replaces space-x-4 */
+  padding-top: 24px;  /* py-6 */
+  padding-bottom: 24px; /* py-6 */
+}
+
+.spcimg {
+  width: 30px;
+  height: 30px;
+}
+
