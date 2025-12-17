@@ -8,6 +8,47 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <title>About us</title>
+
+    <style>
+        .accordion {
+  background-color: #0B1C3F;
+  color: #fffefe;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+  font-weight: bold;
+}
+
+.active, .accordion:hover {
+  background-color: #60a5fa;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #ffffff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-style: 15px;
+}
+    </style>
 </head>
 
 <body>
@@ -49,10 +90,72 @@
                 </div>
             </nav>
             <h1 class="hero-title slide-in-right">
-                <span class="ashiverb">ABOUT US</span>
+                WELCOME TO ASHIVERB
             </h1>
+            <p class="abtTxt">Welcome to Ashiverb, your trusted partner in security solutions. With over 20 years of
+                expertise, we've protected countless individuals, businesses, and communities. From access control to
+                emergency response,
+                our comprehensive services address evolving security needs. Trust us to tackle your security challenges
+                with confidence and precision.</p>
         </div>
     </div>
+
+
+    <!-- start of middle content -->
+    <div class="brandSlide " style="padding: 10px;">
+        <div class="marquee">
+            <div class="track">
+                <div class="awards">
+                    <i class="fa-solid fa-person-military-pointing fa-3x"></i>
+                    <strong>3500</strong>
+                    <small>Guards</small>
+                </div>
+                <div class="awards">
+                    <i class="fa-solid fa-medal fa-3x"></i>
+                    <strong>48</strong>
+                    <small>Awards</small>
+                </div>
+                <div class="awards">
+                    <i class="fa-solid fa-building-flag fa-3x"></i>
+                    <strong>35</strong>
+                    <small>Branches</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 120px;"></div>
+
+
+    <div class="aboutTxt">
+        <div class="aboutWrap">
+            <div class="footerlast">
+                <img src="assets/pic2.jpg" alt="/" class="responsive-img" />
+            </div>
+            <div class="accord">
+                <button class="accordion">CORE VALUES</button>
+                <div class="panel">
+                    <p>Professionalism, Integrity and Excellence.</p>
+                </div>
+
+                <button class="accordion">OUR VISION</button>
+                <div class="panel">
+                    <p>To provide professional security services that exceeds our client’s expectations.</p>
+                </div>
+
+                <button class="accordion">OUR MISSION</button>
+                <div class="panel">
+                    <p>To be the leading global company that provides world-class security services to Corporate Organizations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="height: 150px;"></div>
+
+
+    <div class="directors"></div>
 
 
     <div style="height: 80px;"></div>
@@ -98,5 +201,34 @@
         </div>
     </div>
 </body>
+
+<script>
+    const btn = document.getElementById("menuBtn");
+    const menu = document.getElementById("mobileMenu");
+
+    btn.addEventListener("click", () => {
+        if (menu.style.display === "flex") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "flex";
+        }
+    });
+
+
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 
 </html>
